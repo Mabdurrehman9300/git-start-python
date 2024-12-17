@@ -14,7 +14,11 @@ class Animal:
         print(f'Animal is attacking with power of {power} and using energy {self.energy}')
         self.energy -= power
 
+    def camouflage(self): # camouflage method, (It print)
+        print(f'"{self.color} {self.body}" is hiding')
+
 animal = Animal(100, 100, 'red', 'mammal') # initiating the class, passing health,energy,color,mammal in it
 # calling the methods
 animal.move(120)
 animal.attack(20)
+animal.camouflage()
