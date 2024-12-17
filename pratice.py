@@ -20,9 +20,13 @@ class Animal:
     def bite(self, damage): # bite method, (It print)
         print(f'Animal five damage {damage} with bite')
 
+    def str(self): # string method, (It print)
+        print(f'available parameters: {self.health}, {self.energy}, {self.color}, {self.body}')
+
 animal = Animal(100, 100, 'red', 'mammal') # initiating the class, passing health,energy,color,mammal in it
 # calling the methods
 animal.move(120)
 animal.attack(20)
 animal.camouflage()
 animal.bite(20)
+animal.str()
