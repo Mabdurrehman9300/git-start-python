@@ -17,8 +17,12 @@ class Animal:
     def camouflage(self): # camouflage method, (It print)
         print(f'"{self.color} {self.body}" is hiding')
 
+    def bite(self, damage): # bite method, (It print)
+        print(f'Animal five damage {damage} with bite')
+
 animal = Animal(100, 100, 'red', 'mammal') # initiating the class, passing health,energy,color,mammal in it
 # calling the methods
 animal.move(120)
 animal.attack(20)
 animal.camouflage()
+animal.bite(20)
